@@ -1,7 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #1741C4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+     background-color: #1741C4;
 }
 
 /* --------------- Header --------------------- */
@@ -16,6 +22,7 @@ header {
 .title {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
+    font-weight: 800;
     color: #F0EEFF;
 }
 
@@ -34,3 +41,87 @@ header {
 }
 
 /* ---------------- Main ------------------ */
+
+main {
+    height: calc(100% - 400px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.empty_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.empty_list {
+    width: 392px;
+    height: 131px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop_cart {
+    display: flex;
+    width: 62px;
+    height: 62px;
+    background-image: url(./assets/shopping_cart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.empty_text {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.empty_subtext {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.app_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.add_item {
+    display: flex;
+    width: 272px;
+    height: 54px;
+    border-radius: 14px;
+    border: none;
+    background-color: #FFD426;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1741C4;
+    font-weight: bolder;
+}
+
+.edit_list {
+    display: flex;
+    width: 197px;
+    height: 54px;
+    border-radius: 14px;
+    border: none;
+    background-color: #64AD36;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    gap: 5px;
+}
