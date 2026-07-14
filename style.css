@@ -1,4 +1,36 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: #1741C4;
 }
+
+/* --------------- Header --------------------- */
+
+header {
+    height: 104px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    color: #F0EEFF;
+}
+
+.qnt_itens {
+    background-color: #FFFFFF26;
+    width: 108px;
+    height: 39px;
+    border-radius: 36px;
+    color: white;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+/* ---------------- Main ------------------ */
