@@ -227,3 +227,49 @@ main {
     border-radius: 14px;
     color: white;
 }
+
+/* ------------------------------------------------------- */
+
+.hidden {
+    display: none;
+}
+
+.filled_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+.itemcard {
+    width: 640px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: #64AD36;
+    color: white;
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    padding-left: 45px;
+    font-weight: 500;
+    font-style: medium;
+}
+
+.item_qnt {
+    min-width: 60px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: #496AEDE5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.item_bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #FFD426;
+    flex-shrink: 0;
+}
