@@ -16,7 +16,7 @@
     </header>
     
     <main>
-        <section class="empty_list">
+        <section class="empty_list" id="listavazia">
             <div class="empty_content">
                 <div class="shop_cart"></div>
                 <div class="empty_text"><p>Nenhum item na lista ainda</p></div>
@@ -26,10 +26,32 @@
 
         <section class="app">
             <div class="app_content">
-                <div><button class="add_item">+ Adicionar item</button></div>
+                <div><button class="add_item" id="botaoadd">+ Adicionar item</button></div>
                 <div><button class="edit_list"><img src="./assets/pen.png" alt="Caneta">Editar lista</button></div>
             </div>
         </section>
+
+        <dialog id="overlay">
+            <div class="add_item_overlay_content">
+                <section class="overlay_header">
+                    <h4 class="overlay_title">Adicionar item</h4>
+                    <div class="background_exit_button"></div>
+                    <button class="exit_button" id="botaosaida"><img src="./assets/✕.png" alt="Botão de saída"></button>
+                </section>
+                <div class="inputs">
+                    <div><label class="label_overlay" for="nome">Nome do Produto</label></div>
+                    <div><input class="input_overlay" type="text" id="nome" placeholder="Ex: Leite Integral" required></div>
+                    <div><label class="label_overlay" for="quantidade">Quantidade (OPCIONAL)</label></div>
+                    <div><input class="input_overlay" type="text" id="quantidade" placeholder="Ex: 2 unidades, 500g..."></div>
+                </div>
+                <div class="add_item_overlay_content_buttons">
+                    <button class="cancel_button" id="botaocancelar">Cancelar</button>
+                    <button class="add_button">Adicionar</button>
+                </div>
+            </div>
+        </dialog>
     </main>
+    <script src="script_dom.js">
+    </script>
 </body>
 </html>
